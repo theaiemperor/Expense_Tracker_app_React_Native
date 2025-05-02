@@ -58,7 +58,7 @@ export default function ExpenseForm({
   };
 
   return (
-    <View>
+    <View style={{ width: "100%", maxWidth: 500, alignSelf: "center" }}>
       <Input
         label="Amount"
         textInputConfigurations={{

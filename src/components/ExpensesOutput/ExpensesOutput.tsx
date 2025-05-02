@@ -19,15 +19,9 @@ export default function ExpensesOutput({
   return (
     <View style={styles.container}>
       {expenseCtx.isLoading === -1 && (
-        <>
-          <ErrorOverlay msg="Due to some Problem app is unable to load the data, please try again later after some time" />
-        </>
+        <ErrorOverlay msg="Due to some Problem app is unable to load the data, please try again later after some time" />
       )}
-      {expenseCtx.isLoading === 0 && (
-        <>
-          <LoadingOverlay />
-        </>
-      )}
+      {expenseCtx.isLoading === 0 && <LoadingOverlay />}
       {expenseCtx.isLoading === 1 && (
         <>
           <ExpensesSummary expenses={expenses} periodName={expensesPeriod} />

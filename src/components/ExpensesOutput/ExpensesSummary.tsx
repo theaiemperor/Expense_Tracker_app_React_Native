@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet, Text, View } from "react-native";
 import { GlobalStyles } from "../../Constants/styles";
 import { Expense } from "../../Constants/Types";
 
@@ -30,6 +30,11 @@ const styles = StyleSheet.create({
     backgroundColor: GlobalStyles.colors.primary50,
     borderRadius: 5,
     margin: 10,
+    ...(Platform.OS === "web" && {
+      width: "100%",
+      maxWidth: 500,
+      alignSelf: "center",
+    }),
   },
   text: {
     fontSize: 17,

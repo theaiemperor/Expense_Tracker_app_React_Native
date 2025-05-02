@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     margin: 10,
     borderRadius: 5,
     alignItems: "center",
+    flex: 1,
   },
   dateText: {
     fontSize: 15,
