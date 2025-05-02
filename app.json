@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Expense_Tracker_app_React_Native",
-    "slug": "Expense_Tracker_app_React_Native",
+    "name": "Expense Tracker",
+    "slug": "expense_tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,9 +11,8 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
